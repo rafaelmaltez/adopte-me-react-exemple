@@ -10,7 +10,7 @@ class Details extends Component {
 
   async componentDidMount() {
     const res = await fetch(
-      `http://pets-v2.devs-api.com/pets?id=${this.props.params.id}`
+      `http://pets-v2.dev-apis.com/pets?id=${this.props.params.id}`
     );
     const json = await res.json();
     this.setState({ loading: false, ...json.pets[0] });
@@ -22,7 +22,6 @@ class Details extends Component {
     }
 
     const { animal, breed, city, state, description, name } = this.state;
-
     return (
       <div className="details">
         <h1>{name}</h1>
