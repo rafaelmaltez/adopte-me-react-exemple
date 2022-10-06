@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import useBreedList from "./useBreedList";
-import Pet from "./Pet";
 import Results from "./Results";
 
 const ANIMALS = ["bird", "cat", "dog", "reptile"];
@@ -44,6 +43,7 @@ const SearchParams = () => {
           />
         </label>
         <label htmlFor="animal">
+          Animal
           <select
             id="animal"
             value={animal}
@@ -65,6 +65,7 @@ const SearchParams = () => {
           </select>
         </label>
         <label htmlFor="breed">
+          Breed
           <select
             id="breed"
             value={breed}
